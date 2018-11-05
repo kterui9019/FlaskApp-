@@ -5,7 +5,11 @@
 </head>
 <body>
     <h1>ユーザを登録</h1>
-    
-    
+    <form method="POST" action="/register" enctype="multipart/form-data">
+        <input type="text" name="username" placeholder="名前"/>
+        <textarea name = "description" placeholder="コメント"></textarea>
+        <input type="file" name="image"/>
+        <input type="submit" value="送信"/>
+    </form>
 </body>
 </html>

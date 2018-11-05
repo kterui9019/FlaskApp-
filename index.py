@@ -35,3 +35,5 @@ def register():
 users = User.query.all()
 for user in users:
     print(user.id, user.username, user.description, user.user_image_url)
+    #ユーザーの中から、フォームに入力された名前と一致するデータの1番目のデータを抽出
+    user = User.query.fillter_by(username=form.username.data).first()
